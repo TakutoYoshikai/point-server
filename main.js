@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-let point = 0
+let point = parseInt(process.argv[1]);
 
 app.get("/", function(req, res, next) {
   console.log("access!!!");
