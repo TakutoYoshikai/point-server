@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
-let point = parseInt(process.argv[1]);
+let point = parseInt(process.argv[2]);
 
 app.get("/", function(req, res, next) {
   console.log("access!!!");
-  if (point === 0) {
+  if (point <= 0) {
     res.json({ msg: "failed" })
   } else {
     res.json({ msg: "success"})
