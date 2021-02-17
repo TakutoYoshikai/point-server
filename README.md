@@ -4,12 +4,12 @@ This is a server program for testing possible number to access.
 ### Usage
 **install**
 ```bash
-npm install
+npm install -g TakutoYoshikai/point-server
 ```
 
 **run server**
 ```bash
-node main.js <POSSIBLE NUMBER TO ACCESS>
+point-server <POSSIBLE NUMBER TO ACCESS>
 ```
 
 ### License
