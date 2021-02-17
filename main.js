@@ -3,10 +3,11 @@ const app = express();
 let point = parseInt(process.argv[2]);
 
 app.get("/", function(req, res, next) {
-  console.log("access!!!");
   if (point <= 0) {
+    console.log("failed!!!");
     res.json({ msg: "failed" })
   } else {
+    console.log("success!!!");
     res.json({ msg: "success"})
     point -= 1
   }
